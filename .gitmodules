@@ -1,0 +1,3 @@
+[submodule "utils/luametatex/luametatex-src"]
+	path = utils/luametatex/luametatex-src
+	url = https://github.com/contextgarden/luametatex.git
