@@ -8,22 +8,20 @@ dnl   with or without modifications, as long as this notice is preserved.
 dnl
 AC_INIT([luametatex (TeX Live)], [2.15], [tex-k@tug.org])
 AC_PREREQ([2.65])
-AC_CONFIG_SRCDIR([luametatex-src/])
+AC_CONFIG_SRCDIR([luametatex-src/]) dnl TODO
 AC_CONFIG_AUX_DIR([../../build-aux])
 AC_CONFIG_MACRO_DIR([../../m4])
 
 KPSE_BASIC([luametatex])
 
-dnl AC_CONFIG_HEADERS([config.h])[]dnl unused, to avoid zillions of -D's on command line
-
 dnl Checks for programs.
 AC_PROG_CC
-AC_PROG_INSTALL
 
 if test "x$enable_build" != xno || test -f config.force; then
-
-echo timestamp >config.force
+    echo timestamp >config.force
 fi
+
+AC_SUBST([LUAMETATEX_TREE], [luametatex-src])
 
 dnl AC_CONFIG_FILES([Makefile])
 
