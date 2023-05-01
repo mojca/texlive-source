@@ -86,6 +86,7 @@ autosp
 axodraw2
 devnag
 lacheck
+luametatex
 m-tx
 pmx
 ps2eps
