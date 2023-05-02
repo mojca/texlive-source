@@ -12,7 +12,7 @@ AC_CONFIG_SRCDIR([luametatex-src/]) dnl TODO
 AC_CONFIG_AUX_DIR([../../build-aux])
 AC_CONFIG_MACRO_DIR([../../m4])
 
-KPSE_BASIC([luametatex])
+KPSE_BASIC([luametatex], [no-define])
 
 dnl Checks for programs.
 AC_PROG_CC
@@ -23,6 +23,6 @@ fi
 
 AC_SUBST([LUAMETATEX_TREE], [luametatex-src])
 
-dnl AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile])
 
 AC_OUTPUT
